@@ -33,7 +33,7 @@
   <link rel="icon" href="pages/images/logo.png" type="image/x-icon">
 
   <script src="pages/js/csi.min.js"></script>
-
+  <base href="{ub611-web}" />
 </head>
 <body id="top-header">
 
@@ -45,7 +45,45 @@
 
 
 <!-- NAVBAR -->
-<div data-include="pages/navbar.html"></div>
+<nav class="navbar navbar-expand-lg navbar-dark trans-navigation fixed-top navbar-togglable">
+    <div class="container">
+      <a class="navbar-brand" href="/index.html">
+        <h3>Project Development @ UB</h3>
+      </a>
+      <!-- Toggler -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="fa fa-bars"></span>
+      </button>
+  
+      <!-- Collapse -->
+      <div class="collapse navbar-collapse has-dropdown" id="navbarCollapse">
+        <!-- Links -->
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item ">
+              <a href="index.html" class="nav-link js-scroll-trigger">
+               Home
+              </a>
+            </li>
+          <li class="nav-item ">
+            <a href="pages/about.html" class="nav-link js-scroll-trigger">
+              About
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a href="pages/process.html" class="nav-link js-scroll-trigger">
+              Timeline
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a href="pages/contact.html" class="nav-link">
+              Contact
+            </a>
+          </li>
+        </ul>
+      </div> <!-- / .navbar-collapse -->
+    </div> <!-- / .container -->
+  </nav>
 
  <!-- HERO
     ================================================== -->
@@ -185,7 +223,82 @@
 
 <!--  Footer  -->
 
-<div data-include="pages/footer.html"></div>
+<footer class="section " id="footer">
+    <div class="overlay footer-overlay"></div>
+    <!--Content -->
+    <div class="container">
+      <div class="row justify-content-start">
+        <div class="col-lg-4 col-sm-12">
+          <div class="footer-widget">
+            <!-- Brand -->
+            <a href="index.html" class="footer-brand text-white">
+             Project Development @ UB
+            </a>
+            <img src="pages/images/logo_no_bg_footer.png" alt="">
+          </div>
+        </div>
+        
+        <div class="col-lg-2 col-sm-6">
+        <div class="footer-widget"></div>
+        </div>
+        <div class="col-lg-2 col-sm-6">
+        <div class="footer-widget"> </div>
+        </div>
+ 
+        <div class="col-lg-2 col-sm-6">
+          <div class="footer-widget">
+            <h3>About</h3>
+            <!-- Links -->
+            <ul class="footer-links">
+             <li>
+               <a href="pages/about.html">
+                 About Us
+               </a>
+             </li>
+              <li>
+                <a href="pages/process.html">
+                 Working Process
+                </a>
+              </li>
+ 
+              <li>
+                <a href="pages/contact.html">
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+ 
+        <div class="col-lg-2 col-sm-6">
+          <div class="footer-widget">
+            <h3>Socials</h3>
+            <!-- Links -->
+            <ul class="list-unstyled footer-links">
+             <li><a href="https://www.buffalo.edu/"><i class="fa fa-graduation-cap"></i>University at Buffalo</a></li>
+ 
+             <li><a href="https://www.linkedin.com/school/ub-seas/"><i class="fab fa-linkedin"></i>Linkedin
+               </a></li>
+ 
+           </ul>
+          </div>
+        </div>
+      </div> <!-- / .row -->
+ 
+ 
+      <div class="row text-right pt-5">
+        <div class="col-lg-12">
+          <div class="overflow-hidden">
+            <!-- Copyright -->
+           <p class="footer-copy">
+             Copyright &copy; UB
+           </p>
+          </div>
+        </div>
+      </div> <!-- / .row -->
+    </div> <!-- / .container -->
+  </footer>
+
 
 
 
