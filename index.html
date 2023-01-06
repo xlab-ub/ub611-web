@@ -30,7 +30,9 @@
   <link rel="stylesheet" href="pages/css/style.css">
   
   <!--Favicon-->
-  <link rel="icon" href="pages/images/favicon.png" type="image/x-icon">
+  <link rel="icon" href="pages/images/logo.png" type="image/x-icon">
+
+  <script src="pages/js/csi.min.js"></script>
 
 </head>
 <body id="top-header">
@@ -42,47 +44,8 @@
 <!-- /LOADER TEMPLATE -->
 
 
-<!-- NAVBAR
-    ================================================= -->
-<nav class="navbar navbar-expand-lg navbar-dark trans-navigation fixed-top navbar-togglable">
-  <div class="container">
-    <a class="navbar-brand" href="index.html">
-      <h3>Project Development @ UB</h3>
-    </a>
-    <!-- Toggler -->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
-      aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="fa fa-bars"></span>
-    </button>
-
-    <!-- Collapse -->
-    <div class="collapse navbar-collapse has-dropdown" id="navbarCollapse">
-      <!-- Links -->
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item ">
-            <a href="index.html" class="nav-link js-scroll-trigger">
-             Home
-            </a>
-          </li>
-        <li class="nav-item ">
-          <a href="./pages/about.html" class="nav-link js-scroll-trigger">
-            About
-          </a>
-        </li>
-        <li class="nav-item ">
-          <a href="./pages/process.html" class="nav-link js-scroll-trigger">
-            Working Process
-          </a>
-        </li>
-        <li class="nav-item ">
-          <a href="./pages/./pages/contact.html" class="nav-link">
-            Contact
-          </a>
-        </li>
-      </ul>
-    </div> <!-- / .navbar-collapse -->
-  </div> <!-- / .container -->
-</nav>
+<!-- NAVBAR -->
+<div data-include="pages/navbar.html"></div>
 
  <!-- HERO
     ================================================== -->
@@ -175,8 +138,8 @@
            <div class="row align-items-center">
                 <div class="col-lg-4 col-sm-12 col-md-12">
                     <div class="section-heading testimonial-heading">
-                        <h1>What they say <br>about us</h1>
-                        <p>Numquam doloribus impedit at consectetur molestiae tempora ratione possimus in veniam aperiam, eum consequuntur, unde. Earum ullam molestiae suscipit saepe sunt recusandae.</p>
+                        <h1>What they say about us</h1><br />
+                        <p>Here are some testimonies from professionals who have worked with our students in the past.</p>
                     </div>
                 </div>
                 <div class="col-lg-8 col-sm-12 col-md-12">
@@ -186,12 +149,12 @@
                                <div class="test-author-thumb d-flex">
                                    <img src="pages/images/client/test-1.jpg" alt="Testimonial author" class="img-fluid">
                                    <div class="test-author-info">
-                                       <h4>Will Barrow</h4>
-                                       <h6>M&T Tech</h6>
+                                       <h4>Jennifer Dexheimer</h4>
+                                       <p>Department of Counseling, School, and Educational Psychology, UB</p>
                                    </div>
                                </div>
 
-                                Quas ut distinctio tenetur animi nihil rem, amet dolorum totam. Ab repudiandae tempore qui fugiat amet ipsa id omnis ipsam, laudantium! Dolorem.
+                               <p style="font-size:medium">The CSE Project group is exceptionally talented, dedicated, and collaborative in creating a high-quality product! My team developed and tested clinical tracking software for master-level counseling students to use in field placements. Having a custom, user-friendly program like this will drastically reduce errors with data collection and will generate applicable reports needed for professional certification and licensure. THANK YOU to my amazing student team. I will be pitching new proposals to UB's CSE Project class again in the future!</p>
 
                                 <i class="fa fa-quote-right"></i>
                             </div>
@@ -202,49 +165,17 @@
                                    <img src="pages/images/client/test-2.jpg" alt="Testimonial author" class="img-fluid">
                                    <div class="test-author-info">
                                        <h4>Will Barrow</h4>
-                                       <h6>Blackstone LaunchPad</h6>
+                                       <p>Blackstone LaunchPad</p>
                                    </div>
                                </div>
 
-                                Quas ut distinctio tenetur animi nihil rem, amet dolorum totam. Ab repudiandae tempore qui fugiat amet ipsa id omnis ipsam, laudantium! Dolorem.
+                               <p style="font-size:medium">Quas ut distinctio tenetur animi nihil rem, amet dolorum totam. Ab repudiandae tempore qui fugiat amet ipsa id omnis ipsam, laudantium! Dolorem. Numquam doloribus impedit at consectetur molestiae tempora ratione possimus in veniam aperiam, eum consequuntur, unde. Earum ullam molestiae suscipit saepe sunt recusandae.</p>
 
                                 <i class="fa fa-quote-right"></i>
                             </div>
                         </div>
                     </div>
                     
-                     <div class="row">
-                        <div class="col-lg-6">
-                            <div class="test-inner ">
-                               <div class="test-author-thumb d-flex">
-                                   <img src="pages/images/client/test-3.jpg" alt="Testimonial author" class="img-fluid">
-                                   <div class="test-author-info">
-                                       <h4>Will Barrow</h4>
-                                       <h6>Stark and Wayne</h6>
-                                   </div>
-                               </div>
-
-                                Quas ut distinctio tenetur animi nihil rem, amet dolorum totam. Ab repudiandae tempore qui fugiat amet ipsa id omnis ipsam, laudantium! Dolorem.
-
-                                <i class="fa fa-quote-right"></i>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="test-inner ">
-                               <div class="test-author-thumb d-flex">
-                                   <img src="pages/images/client/test-4.jpg" alt="Testimonial author" class="img-fluid">
-                                   <div class="test-author-info">
-                                       <h4>Will Barrow</h4>
-                                       <h6>ACV Auctions</h6>
-                                   </div>
-                               </div>
-
-                                Quas ut distinctio tenetur animi nihil rem, amet dolorum totam. Ab repudiandae tempore qui fugiat amet ipsa id omnis ipsam, laudantium! Dolorem.
-
-                                <i class="fa fa-quote-right"></i>
-                            </div>
-                        </div>
-                    </div>
                 
                     </div>
                 </div>
@@ -252,108 +183,10 @@
         </div>
     </section>
 
- <footer class="section " id="footer">
-   <div class="overlay footer-overlay"></div>
-   <!--Content -->
-   <div class="container">
-     <div class="row justify-content-start">
-       <div class="col-lg-4 col-sm-12">
-         <div class="footer-widget">
-           <!-- Brand -->
-           <a href="index.html" class="footer-brand text-white">
-            Project Development @ UB
-           </a>
-         </div>
-       </div>
+<!--  Footer  -->
 
-       <div class="col-lg-3 ml-lg-auto col-sm-12">
-         <div class="footer-widget">
-           <h3>Account</h3>
-           <!-- Links -->
-           <ul class="footer-links ">
-             <li>
-               <a href="#!">
-                 Terms and conditions
-               </a>
-             </li>
-             <li>
-               <a href="#!">
-                 Privacy policy
-               </a>
-             </li>
-             <li>
-               <a href="#!">
-                 Help and support
-               </a>
-             </li>
-             <li>
-               <a href="#!">
-                 Frequently Asked Question
-               </a>
-             </li>
-           </ul>
-         </div>
-       </div>
+<div data-include="pages/footer.html"></div>
 
-
-       <div class="col-lg-2 col-sm-6">
-         <div class="footer-widget">
-           <h3>About</h3>
-           <!-- Links -->
-           <ul class="footer-links">
-            <li>
-              <a href="./pages/about.html">
-                About Us
-              </a>
-            </li>
-             <li>
-               <a href="./pages/process.html">
-                Working Process
-               </a>
-             </li>
-
-             <li>
-               <a href="./pages/contact.html">
-                 Contact
-               </a>
-             </li>
-           </ul>
-         </div>
-       </div>
-
-       <div class="col-lg-2 col-sm-6">
-         <div class="footer-widget">
-           <h3>Socials</h3>
-           <!-- Links -->
-           <ul class="list-unstyled footer-links">
-            <li><a href="https://www.buffalo.edu/"><i class="fa fa-graduation-cap"></i>University at Buffalo</a></li>
-            <li>
-              <a href="https://www.twitter.com/"><i class="fab fa-twitter"></i>Twitter
-              </a></li>
-
-            <li><a href="https://linkedin.com/"><i class="fab fa-linkedin"></i>Linkedin
-              </a></li>
-
-          </ul>
-         </div>
-       </div>
-     </div> <!-- / .row -->
-
-
-     <div class="row text-right pt-5">
-       <div class="col-lg-12">
-         <div class="overflow-hidden">
-           <!-- Copyright -->
-          <p class="footer-copy">
-            Copyright &copy; <script>var CurrentYear = new Date().getFullYear()
-            document.write(CurrentYear)
-          </script>
-          </p>
-         </div>
-       </div>
-     </div> <!-- / .row -->
-   </div> <!-- / .container -->
- </footer>
 
 
  <!--  Page Scroll to Top  -->

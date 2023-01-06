@@ -31,8 +31,8 @@
   <link rel="stylesheet" href="css/style.css">
   
   <!--Favicon-->
-  <link rel="icon" href="images/favicon.png" type="image/x-icon">
-
+  <link rel="icon" href="images/logo.png" type="image/x-icon">
+  <script src="js/csi.min.js"></script>
 </head>
 <body id="top-header">
 <!-- LOADER TEMPLATE -->
@@ -42,47 +42,8 @@
 <!-- /LOADER TEMPLATE -->
 
 
-<!-- NAVBAR
-    ================================================= -->
-<nav class="navbar navbar-expand-lg navbar-dark trans-navigation fixed-top navbar-togglable">
-  <div class="container">
-    <a class="navbar-brand" href="../index.html">
-      <h3>Project Developement @ UB</h3>
-    </a>
-    <!-- Toggler -->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
-      aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="fa fa-bars"></span>
-    </button>
-
-     <!-- Collapse -->
-     <div class="collapse navbar-collapse has-dropdown" id="navbarCollapse">
-      <!-- Links -->
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item ">
-            <a href="../index.html" class="nav-link js-scroll-trigger">
-             Home
-            </a>
-          </li>
-        <li class="nav-item ">
-          <a href="about.html" class="nav-link js-scroll-trigger">
-            About
-          </a>
-        </li>
-        <li class="nav-item ">
-          <a href="process.html" class="nav-link js-scroll-trigger">
-            Working Process
-          </a>
-        </li>
-        <li class="nav-item ">
-          <a href="contact.html" class="nav-link">
-            Contact
-          </a>
-        </li>
-      </ul>
-    </div> <!-- / .navbar-collapse -->
-  </div> <!-- / .container -->
-</nav>
+<!-- NAVBAR -->
+<div data-include="navbar.html"></div>
 
 <!-- HERO
 ================================================== -->
@@ -101,38 +62,56 @@
     </div> <!-- / .container -->
 </section>
 
+<section class="section" id="section-testimonial">
+  <div class="container">
+    <h2 align="center" style="font-size: 30px;">Meet the Instructors</h2><br /><br />
+     <div class="row align-items-center">
+          <!-- <div class="col-lg-4 col-sm-12 col-md-12">
+              <div class="section-heading testimonial-heading">
+                  <h1>What they say <br>about us</h1>
+                  <p>Numquam doloribus impedit at consectetur molestiae tempora ratione possimus in veniam aperiam, eum consequuntur, unde. Earum ullam molestiae suscipit saepe sunt recusandae.</p>
+              </div>
+          </div>
+          <div class="col-lg-8 col-sm-12 col-md-12">
+              <div class="row"> -->
+                  <div class="col-lg-6">
+                      <div class="test-inner ">
+                         <div class="test-author-thumb d-flex">
+                             <img src="images/JinjunXiong.jpg" alt="Testimonial author" class="img-fluid">
+                             <div class="test-author-info">
+                                 <h4>Jinjun Xiong</h4>
+                                 <p>
+                                  SUNY Empire Innovation Professor</p>
+                             </div>
+                         </div>
 
-  <!-- SECTIONS
-    ================================================== -->
-    <section id="contact-info">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-4 col-sm-6 col-md-6">
-                    <div class="contact-info-block text-center">
-                        <i class="pe-7s-map-marker"></i>
-                        <h4>Address</h4>
-                        <p class="lead">
-                          Department of Computer Science
-                          and Engineering</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6 col-md-6">
-                    <div class="contact-info-block text-center">
-                        <i class="pe-7s-mail"></i>
-                        <h4>Email</h4>
-                        <p class="lead">cse611@buffalo.edu</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6 col-md-6">
-                    <div class="contact-info-block text-center">
-                        <i class="pe-7s-phone"></i>
-                        <h4>Phone Number</h4>
-                        <p class="lead">+23-68017684</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+                         <p><i class="pe-7s-map-marker"></i>316 Davis HallBuffalo NY, 14260-2500</p>
+                         <p><i class="pe-7s-mail"></i>jinjun@buffalo.edu</p>
+                         <a target="_blank" href="https://www.xlab-ub.com/"><p style="color:#005bbb"><i class="pe-7s-link"></i>Dr Xiong's Website</p></a>
+       
+                      </div>
+                  </div>
+                  <div class="col-lg-6">
+                      <div class="test-inner ">
+                         <div class="test-author-thumb d-flex">
+                             <img src="images/AlanHunt.jpg" alt="Testimonial author" class="img-fluid">
+                             <div class="test-author-info">
+                                 <h4>Alan Hunt</h4>
+                                 <p>Professor of Practice</p>
+                             </div>
+                         </div>
+
+                         <p><i class="pe-7s-map-marker"></i>354 Davis HallBuffalo NY, 14260-2500</p>
+                         <p><i class="pe-7s-mail"></i>ahunt@buffalo.edu</p>
+                         <a target="_blank" href="https://cse.buffalo.edu/faculty/ahunt/"><p  style="color:#005bbb"><i class="pe-7s-link"></i>Mr Hunt's Website</p></a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
 
     <section class="section" id="contact">
         <div class="container">
@@ -164,7 +143,7 @@
                     </div>
                     <!-- end message -->
                     <!-- Contacts Form -->
-                    <form class="contact_form" action="mail.php">
+                    <form class="contact_form" action="" >
                         <div class="row">
                             <!-- Input -->
                             <div class="col-sm-6 mb-6">
@@ -175,7 +154,7 @@
                                     </label>
 
                                     <div class="input-group">
-                                        <input class="form-control" name="name" id="name" required="" placeholder="John Doe" type="text">
+                                        <input class="form-control" name="name" id="name" required type="text">
                                     </div>
                                 </div>
                             </div>
@@ -190,7 +169,7 @@
                                     </label>
 
                                     <div class="input-group ">
-                                        <input class="form-control" name="email" id="email" required="" placeholder="john@gmail.com" type="email">
+                                        <input class="form-control" name="email" id="email" required type="email">
                                     </div>
                                 </div>
                             </div>
@@ -207,7 +186,7 @@
                                     </label>
 
                                     <div class="input-group">
-                                        <input class="form-control" name="subject" id="subject" required="" placeholder="Web design" type="text">
+                                        <input class="form-control" name="subject" id="subject" required placeholder="Inquiry about.." type="text">
                                     </div>
                                 </div>
                             </div>
@@ -218,11 +197,11 @@
                                 <div class="form-group">
                                     <label class="h6 small d-block text-uppercase">
                                         Your Phone Number
-                                        <span class="text-danger">*</span>
+                                       
                                     </label>
 
                                     <div class="input-group ">
-                                        <input class="form-control" id="phone" name="phone" required="" placeholder="1-800-643-4500" type="text">
+                                        <input class="form-control" id="phone" name="phone" type="text">
                                     </div>
                                 </div>
                             </div>
@@ -253,121 +232,16 @@
 
                 <div class="col-lg-6 col-md-6">
                     <!-- START MAP -->
-                    <div id="map" ></div>
+                    <iframe  id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2917.8374746916415!2d-78.78944418455812!3d43.00275670226351!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d3731d068c2cd7%3A0xa3d0a835ba98f517!2sDavis%20Hall%20-%20University%20at%20Buffalo!5e0!3m2!1sen!2sus!4v1672982274891!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     <!-- END MAP -->
                 </div>
             </div>
         </div>
     </section>
- <footer class="section " id="footer">
-   <div class="overlay footer-overlay"></div>
-   <!--Content -->
-   <div class="container">
-     <div class="row justify-content-start">
-       <div class="col-lg-4 col-sm-12">
-         <div class="footer-widget">
-           <!-- Brand -->
-           <a href="../index.html" class="footer-brand text-white">
-             Project Development @ UB
-           </a>
-         </div>
-       </div>
 
-       <div class="col-lg-3 ml-lg-auto col-sm-12">
-         <div class="footer-widget">
-           <h3>Account</h3>
-           <!-- Links -->
-           <ul class="footer-links ">
-             <li>
-               <a href="#!">
-                 Terms and conditions
-               </a>
-             </li>
-             <li>
-               <a href="#!">
-                 Privacy policy
-               </a>
-             </li>
-             <li>
-               <a href="#!">
-                 Affiliate services
-               </a>
-             </li>
-             <li>
-               <a href="#!">
-                 Help and support
-               </a>
-             </li>
-             <li>
-               <a href="#!">
-                 Frequently Asked Question
-               </a>
-             </li>
-           </ul>
-         </div>
-       </div>
+<!--  Footer  -->
 
-
-       <div class="col-lg-2 col-sm-6">
-         <div class="footer-widget">
-           <h3>About</h3>
-           <!-- Links -->
-           <ul class="footer-links">
-            <li>
-              <a href="about.html">
-                About Us
-              </a>
-            </li>
-
-             <li>
-               <a href="process.html">
-                Working Process
-               </a>
-             </li>
-
-             <li>
-               <a href="contact.html">
-                 Contact
-               </a>
-             </li>
-           </ul>
-         </div>
-       </div>
-
-       <div class="col-lg-2 col-sm-6">
-         <div class="footer-widget">
-           <h3>Socials</h3>
-           <!-- Links -->
-           <ul class="list-unstyled footer-links">
-            <li><a href="https://www.buffalo.edu/"><i class="fa fa-graduation-cap"></i>University at Buffalo</a></li>
-            <li>
-              <a href="https://www.twitter.com/"><i class="fab fa-twitter"></i>Twitter
-              </a></li>
-
-            <li><a href="https://linkedin.com/"><i class="fab fa-linkedin"></i>Linkedin
-              </a></li>
-
-          </ul>
-         </div>
-       </div>
-     </div> <!-- / .row -->
-
-
-     <div class="row text-right pt-5">
-       <div class="col-lg-12">
-         <div class="overflow-hidden">
-           <!-- Copyright -->
-          <p class="footer-copy">
-            Copyright &copy; <script>var CurrentYear = new Date().getFullYear()
-            document.write(CurrentYear)
-          </script>
-          </p>
-         </div>
-       </div>
-     </div> <!-- / .row -->
-   </div> <!-- / .container -->
- </footer>
-
+<div data-include="footer.html"></div>
 
  <!--  Page Scroll to Top  -->
 

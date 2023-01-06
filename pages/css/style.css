@@ -1233,19 +1233,18 @@ SECTION TESTIMONIAL
   box-shadow: 0 7px 22px rgba(0, 0, 0, 0.08);
 }
 .test-inner i {
-  font-size: 60px;
-  opacity: 0.09;
-  position: absolute;
-  right: 40px;
-  bottom: 20px;
+  font-size: 20px;
+  /* margin-bottom: 10px; */
+  display: block;
+  color: #005bbb;
 }
 
 .test-author-thumb {
   margin-bottom: 15px;
 }
 .test-author-thumb img {
-  width: 90px;
-  height: 90px;
+  width: 120px;
+  height: 120px;
   border-radius: 100%;
   border: 1px dotted #ddd;
   padding: 5px;

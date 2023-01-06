@@ -30,8 +30,8 @@
   <link rel="stylesheet" href="css/style.css">
   
   <!--Favicon-->
-  <link rel="icon" href="images/favicon.png" type="image/x-icon">
-
+  <link rel="icon" href="images/logo.png" type="image/x-icon">
+  <script src="js/csi.min.js"></script>
 </head>
 <body id="top-header">
 <!-- LOADER TEMPLATE -->
@@ -41,53 +41,8 @@
 <!-- /LOADER TEMPLATE -->
 
 
-<!-- NAVBAR
-    ================================================= -->
-    <nav class="navbar navbar-expand-lg navbar-dark trans-navigation fixed-top navbar-togglable">
-      <div class="container navbar-blue">
-        <a class="navbar-brand" href="../index.html">
-          <h3>Project Development @ UB</h3>
-        </a>
-        <!-- Toggler -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
-          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="fa fa-bars"></span>
-        </button>
-    
-         <!-- Collapse -->
-         <div class="collapse navbar-collapse has-dropdown" id="navbarCollapse">
-          <!-- Links -->
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item ">
-                <a href="../index.html" class="nav-link js-scroll-trigger">
-                 Home
-                </a>
-              </li>
-            <li class="nav-item ">
-              <a href="about.html" class="nav-link js-scroll-trigger">
-                About
-              </a>
-            </li>
-            <li class="nav-item ">
-              <a href="process.html" class="nav-link js-scroll-trigger">
-                Working Process
-              </a>
-            </li>
-            <li class="nav-item ">
-              <a href="news.html" class="nav-link js-scroll-trigger">
-                News
-              </a>
-            </li>
-    
-            <li class="nav-item ">
-              <a href="contact.html" class="nav-link">
-                Contact
-              </a>
-            </li>
-          </ul>
-        </div> <!-- / .navbar-collapse -->
-      </div> <!-- / .container -->
-    </nav>
+<!-- NAVBAR -->
+<div data-include="navbar.html"></div>
     
     <!-- HERO
     ================================================== -->
@@ -182,116 +137,9 @@
         </div>
     </section>
 
- <footer class="section " id="footer">
-   <div class="overlay footer-overlay"></div>
-   <!--Content -->
-   <div class="container">
-     <div class="row justify-content-start">
-       <div class="col-lg-4 col-sm-12">
-         <div class="footer-widget">
-           <!-- Brand -->
-           <a href="../index.html" class="footer-brand text-white">
-             Rappo
-           </a>
-           <p>Each theme featured at the Bootstrap marketplace has been reviewed by Bootstrap's creators.Lorem ipsum
-             dolor sit amet, consectetur adipisicing elit.</p>
-         </div>
-       </div>
+     <!--  Footer  -->
 
-       <div class="col-lg-3 ml-lg-auto col-sm-12">
-         <div class="footer-widget">
-           <h3>Account</h3>
-           <!-- Links -->
-           <ul class="footer-links ">
-             <li>
-               <a href="#!">
-                 Terms and conditions
-               </a>
-             </li>
-             <li>
-               <a href="#!">
-                 Privacy policy
-               </a>
-             </li>
-             <li>
-               <a href="#!">
-                 Affiliate services
-               </a>
-             </li>
-             <li>
-               <a href="#!">
-                 Help and support
-               </a>
-             </li>
-             <li>
-               <a href="#!">
-                 Frequently Asked Question
-               </a>
-             </li>
-           </ul>
-         </div>
-       </div>
-
-
-       <div class="col-lg-2 col-sm-6">
-         <div class="footer-widget">
-           <h3>About</h3>
-           <!-- Links -->
-           <ul class="footer-links">
-            <li>
-              <a href="about.html">
-                About Us
-              </a>
-            </li>
-
-             <li>
-               <a href="project.html">
-                Working Process
-               </a>
-             </li>
-
-             <li>
-               <a href="contact.html">
-                 Contact
-               </a>
-             </li>
-           </ul>
-         </div>
-       </div>
-
-       <div class="col-lg-2 col-sm-6">
-         <div class="footer-widget">
-           <h3>Socials</h3>
-           <!-- Links -->
-           <ul class="list-unstyled footer-links">
-            <li><a href="https://www.buffalo.edu/"><i class="fa fa-graduation-cap"></i>University at Buffalo</a></li>
-            <li>
-              <a href="https://www.twitter.com/"><i class="fab fa-twitter"></i>Twitter
-              </a></li>
-
-            <li><a href="https://linkedin.com/"><i class="fab fa-linkedin"></i>Linkedin
-              </a></li>
-
-          </ul>
-         </div>
-       </div>
-     </div> <!-- / .row -->
-
-
-     <div class="row text-right pt-5">
-       <div class="col-lg-12">
-         <div class="overflow-hidden">
-           <!-- Copyright -->
-          <p class="footer-copy">
-            Copyright &copy; <script>var CurrentYear = new Date().getFullYear()
-            document.write(CurrentYear)
-          </script>
-          </p>
-         </div>
-       </div>
-     </div> <!-- / .row -->
-   </div> <!-- / .container -->
- </footer>
+    <div data-include="footer.html"></div>
 
 
  <!--  Page Scroll to Top  -->
