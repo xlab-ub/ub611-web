@@ -2543,6 +2543,10 @@ h6 {
   .timeline-row:last-child {
     padding-bottom: 70px;
   }
+  .rocket-img img{
+    height: 0px;
+    width:0px;
+  }
 }
 
 @media screen and (max-width: 640px) {
