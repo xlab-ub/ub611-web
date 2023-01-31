@@ -43,7 +43,7 @@
 
 
 <!-- NAVBAR -->
-<div data-include="navbar.html"></div>
+<div id ="nav-placeholder"></div>
 
 <!-- HERO
 ================================================== -->
@@ -263,7 +263,18 @@
   <script src="plugins/google-map/gmap.js"></script>
 
   <script src="js/script.js"></script>
-
+  <script  type="text/javascript">
+    $(function(){
+    fetch("navbar.html")
+            .then((response) => response.text())
+            .then((text) => {
+                const otherDoc = document.implementation.createHTMLDocument("nav").documentElement;
+                otherDoc.innerHTML = text;
+                otherDoc.querySelector("#contactTab").style.borderBottom = "1.5px solid white"
+                document.querySelector("#nav-placeholder").innerHTML = otherDoc.innerHTML;
+        });
+    });
+   </script>
 </body>
 </html>
    
